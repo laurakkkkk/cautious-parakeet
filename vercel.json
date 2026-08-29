@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "*.html",
+      "src": "*.{html,png,jpg,jpeg,gif,svg,ico}",
       "use": "@vercel/static"
     }
   ],
@@ -14,14 +14,6 @@
     {
       "src": "/api/webhook",
       "dest": "/api/webhook.js"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)\\.html",
-      "dest": "/$1.html"
     },
     {
       "src": "/(.*)",
